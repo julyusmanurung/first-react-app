@@ -1,9 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App'
-import './index.css'
+import App from './components/App';
+import './index.css';
+import { Router, Switch, Route } from 'react-router-dom';
+import Jokes from './components/Jokes';
+import createBrowserHistory from 'history/createBrowserHistory'
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+<Router history={createBrowserHistory()}>
+    <Switch>
+        <Route exact path='/' component={App}></Route>
+        <Route path='/jokes' component={Jokes}></Route>
+    </Switch>
+</Router>, document.getElementById('root'));
 
 // new Promise((resolve, reject) => {
 //     return reject(new Error('No bears'));
