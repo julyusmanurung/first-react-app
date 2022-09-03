@@ -5,6 +5,17 @@ import './index.css'
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 
+// new Promise((resolve, reject) => {
+//     return reject(new Error('No bears'));
+//     setTimeout(() => {
+//        resolve('Bears, Beets, Beets Alaskan'); 
+//     }, 2000);
+// })
+// .then(quote => {
+//     console.log(quote);
+// })
+// .catch(error => console.log('error', error));
+
 // class Animal {
 //     constructor(name, age) {
 //         this.name = name;
