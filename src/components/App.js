@@ -4,6 +4,7 @@ import SocialProfiles from "../components/SocialProfiles";
 import profile from '../assets/profile.jpg'
 import Title from "../components/Title";
 import Jokes from "./Jokes";
+import Header from './Header'
 
 class App extends Component {
     state = { displayBio: false};
@@ -15,6 +16,7 @@ class App extends Component {
     render() {
         return (
             <div>
+                <Header/>
                 <img src={profile} alt='julyus andreas' className='profile'/>
                 <h1>Hello World!</h1>
                 <p>My name is Julyus Andreas.</p>
