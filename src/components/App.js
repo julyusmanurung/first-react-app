@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import Projects from "../components/Projects";
 import SocialProfiles from "../components/SocialProfiles";
-import profile from '../assets/profile.jpg'
 import Title from "../components/Title";
-import Jokes from "./Jokes";
-import Header from './Header'
+import profile from '../assets/profile.jpg'
 
 class App extends Component {
     state = { displayBio: false};
@@ -16,7 +14,6 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Header/>
                 <img src={profile} alt='julyus andreas' className='profile'/>
                 <h1>Hello World!</h1>
                 <p>My name is Julyus Andreas.</p>
@@ -42,19 +39,9 @@ class App extends Component {
                 <hr/>
                 <SocialProfiles></SocialProfiles>
                 <hr/>
-                <Jokes/>
             </div>
         )
     }
 }
 
 export default App;
-
-// class RegularClass {}
-// class ComponentClass extends Component {}
-
-// const RegularClassInstance = new RegularClass();
-// const ComponentClassInstace = new ComponentClass();
-
-// console.log('RegularClassInstance', RegularClassInstance);
-// console.log('ComponentClassInstace', ComponentClassInstace);
